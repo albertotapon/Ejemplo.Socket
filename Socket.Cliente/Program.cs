@@ -26,8 +26,6 @@ namespace Calculator.Cliente
                 Console.WriteLine(resultado);
             }
 
-            Console.Write("Press any key to close the Calculator console app...");
-            Console.ReadKey();
         }
 
         static string EnviaMenaje(string mensaje)
@@ -38,8 +36,9 @@ namespace Calculator.Cliente
                 // Get Host IP Address that is used to establish a connection
                 // In this case, we get one IP address of localhost that is IP : 127.0.0.1
                 // If a host has multiple addresses, you will get a list of addresses
-                
+
                 IPHostEntry host = Dns.GetHostEntry("localhost");
+                //IPHostEntry host = Dns.GetHostEntry("C13-16");
                 IPAddress ipAddress = host.AddressList[0];
 
                 //IPAddress ipAddress = IPAddress.Parse("ip destino");
