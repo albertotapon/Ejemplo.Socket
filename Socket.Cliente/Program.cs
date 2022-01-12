@@ -38,8 +38,8 @@ namespace Calculator.Cliente
                 // If a host has multiple addresses, you will get a list of addresses
 
                 IPHostEntry host = Dns.GetHostEntry("localhost");
-                //IPHostEntry host = Dns.GetHostEntry("C13-16");
                 IPAddress ipAddress = host.AddressList[0];
+
 
                 //IPAddress ipAddress = IPAddress.Parse("ip destino");
 

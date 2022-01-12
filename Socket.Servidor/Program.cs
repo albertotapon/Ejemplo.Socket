@@ -11,8 +11,9 @@ namespace Calculator.Servidor
     {
         static void Main(string[] args)
         {
-            IPHostEntry host = Dns.GetHostEntry("localhost");
-            IPAddress ipAddress = host.AddressList[0];
+            //IPHostEntry host = Dns.GetHostEntry("localhost");
+            //IPAddress ipAddress = host.AddressList[0];
+            IPAddress ipAddress = IPAddress.Parse("192.168.100.254");
 
             //IPAddress ipAddress = IPAddress.Parse("ip escucha");
 
